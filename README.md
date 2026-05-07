@@ -1,17 +1,30 @@
-# mi_app
+# mi_app - Proyecto Perfumería Violeta (ADSO)
 
-A new Flutter project.
+Este proyecto es la evidencia técnica para el programa de **Análisis y Desarrollo de Software (SENA)**. Se trata de una aplicación móvil híbrida desarrollada en **Flutter** que implementa una arquitectura **BaaS** (Backend-as-a-Service) mediante la integración con **Firebase**.
 
-## Getting Started
+## 🚀 Características Técnicas
+- **Persistencia en la Nube:** Uso de Cloud Firestore para sincronización de datos en tiempo real.
+- **Arquitectura:** Separación de responsabilidades (Modelos, Vistas y Servicios).
+- **Desarrollo Multiplataforma:** Validado en dispositivos iOS (vía Xcode Simulator) y Android.
 
-This project is a starting point for a Flutter application.
+## 🛠️ Stack Tecnológico
+- **Framework:** Flutter SDK
+- **Lenguaje:** Dart
+- **Base de Datos:** Firebase Cloud Firestore
+- **Entorno de Simulación:** Xcode Simulator (macOS)
+- **Control de Versiones:** Git / GitHub
 
-A few resources to get you started if this is your first Flutter project:
+## 📂 Estructura del Proyecto
+- `lib/models/`: Definición de la entidad Item y mapeo de datos.
+- `lib/screens/`: Interfaces de usuario y lógica de formularios.
+- `android/`: Configuración nativa y build del APK.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## 📥 Instalación y Pruebas
+1. Clonar el repositorio: `git clone https://github.com/JulioS0810/mi_app_flutter.git`
+2. Instalar dependencias: `flutter pub get`
+3. Ejecutar en simulador: `flutter run`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+**Aprendiz:** Julio César Suárez Garavito  
+**Institución:** Servicio Nacional de Aprendizaje (SENA)  
+**Ficha:** 3134550
