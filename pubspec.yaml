@@ -1,0 +1,80 @@
+# ----------------------------------------------------------------------------
+# PROYECTO: mi_app - Plataforma Web/Móvil
+# ARCHIVO: pubspec.yaml
+# DESARROLLADOR: Julio César Suárez Garavito (Aprendiz ADSO)
+# INSTRUCTORA: Elizabeth Gelves Gelves
+# DESCRIPCIÓN: Configuración de dependencias y recursos del proyecto.
+# ----------------------------------------------------------------------------
+
+name: mi_app
+description: "Plataforma de gestión para Perfumería Violeta - Proyecto ADSO SENA."
+publish_to: 'none'            # No publicar en pub.dev (aplicación privada)
+version: 1.0.0+1              # Versión interna: 1.0.0 (build 1)
+
+# ----------------------------------------------------------------------------
+# ENTORNO DE DESARROLLO
+# ----------------------------------------------------------------------------
+environment:
+  sdk: ^3.11.5                # Versión del SDK de Dart requerida
+
+# ----------------------------------------------------------------------------
+# DEPENDENCIAS DE PRODUCCIÓN (necesarias para la app en funcionamiento)
+# ----------------------------------------------------------------------------
+dependencies:
+  # Framework Flutter (obligatorio)
+  flutter:
+    sdk: flutter
+
+  # Iconos estilo iOS (Cupertino) - útiles para compatibilidad multiplataforma
+  cupertino_icons: ^1.0.8
+
+  # Firebase Core: núcleo para servicios Firebase.
+  # Versión 4.7.0 compatible con Flutter 3.x y Dart 3.x.
+  firebase_core: ^4.7.0
+
+  # Cloud Firestore: base de datos NoSQL en tiempo real.
+  # Versión 6.3.0 compatible con firebase_core 4.7.0.
+  cloud_firestore: ^6.3.0
+
+# ----------------------------------------------------------------------------
+# DEPENDENCIAS DE DESARROLLO (solo para pruebas, análisis y herramientas)
+# ----------------------------------------------------------------------------
+dev_dependencies:
+  # Framework para pruebas unitarias y de widgets (incluido con Flutter)
+  flutter_test:
+    sdk: flutter
+
+  # Conjunto de reglas de linting recomendadas por Flutter
+  flutter_lints: ^6.0.0
+
+  # NOTA: No se declaran explícitamente firebase_core_platform_interface
+  # ni cloud_firestore_platform_interface porque son dependencias transitivas
+  # de firebase_core y cloud_firestore respectivamente.
+  # Declararlas aquí podría generar conflictos de versión.
+  # En las pruebas se utilizan mocks basados en MethodChannel,
+  # los cuales no requieren esas interfaces adicionales.
+
+# ----------------------------------------------------------------------------
+# CONFIGURACIÓN ESPECÍFICA DE FLUTTER (activos, fuentes, imágenes, etc.)
+# ----------------------------------------------------------------------------
+flutter:
+  # Habilita el uso de Material Design (componentes visuales estándar)
+  uses-material-design: true
+
+  # ========================================================================
+  # SECCIÓN DE ACTIVOS (assets): imágenes, iconos, fuentes personalizadas
+  # ========================================================================
+  # Ejemplo de cómo agregar imágenes:
+  # assets:
+  #   - assets/images/
+  #   - assets/icons/
+  #
+  # Ejemplo de cómo agregar fuentes personalizadas:
+  # fonts:
+  #   - family: MiFuente
+  #     fonts:
+  #       - asset: assets/fonts/MiFuente-Regular.ttf
+  #       - asset: assets/fonts/MiFuente-Bold.ttf
+  #         weight: 700
+  #
+  # (Descomentar y adaptar según necesidades del proyecto)

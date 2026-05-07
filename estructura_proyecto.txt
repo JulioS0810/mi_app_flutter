@@ -1,0 +1,43 @@
+==========================================================================
+ESTRUCTURA DEL PROYECTO: mi_app
+Ecosistema: macOS | Framework: Flutter | Backend: Firebase
+Repositorio: https://github.com/JulioS0810/mi_app_flutter
+==========================================================================
+
+mi_app/                      # Raíz del proyecto en tu MacBook Pro.
+│
+├── android/                 # Configuración nativa para dispositivos Android.
+│   └── app/                 # Contiene 'google-services.json' para el enlace Cloud.
+│
+├── ios/                     # Configuración nativa para dispositivos Apple (iPhone/iPad).
+│
+├── macos/                   # Soporte para ejecución de escritorio en macOS.
+│
+├── build/                   # Archivos temporales de compilación (No se suben a Git).
+│
+├── lib/                     # EL NÚCLEO: Lógica y Desarrollo (Directorio Validado)
+│   │
+│   ├── main.dart            # Punto de entrada: Inicializa Firebase y lanza MyApp.
+│   │
+│   ├── home_screen.dart     # Interfaz principal: CRUD reactivo para Perfumería Violeta.
+│   │
+│   ├── item.dart            # Modelo de datos: Estructura de los objetos para Firestore.
+│   │
+│   └── firebase_options.dart # Configuración generada automáticamente por FlutterFire.
+│
+├── test/                    # Suite de Aseguramiento de Calidad (QA)
+│   └── widget_test.dart     # Pruebas de renderizado y lógica de botones.
+│
+├── pubspec.yaml             # Manifiesto: Control de dependencias (Firebase, Cloud Firestore).
+│
+├── .gitignore               # Filtro de Git: Evita subir archivos pesados o sensibles.
+│
+└── README.md                # Documentación técnica para la evidencia GA8 (ADSO).
+
+==========================================================================
+VALIDACIÓN TÉCNICA DEL PROYECTO:
+- Backend: Sincronización en tiempo real con Cloud Firestore.
+- Persistencia: Colección 'personas' configurada para almacenamiento NoSQL.
+- Red Local: Preparado para integración bajo IP 192.168.5.105 si se requiere.
+- Calidad: Incluye manejo de recursos mediante el método dispose().
+==========================================================================
