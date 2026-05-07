@@ -15,14 +15,14 @@ Este proyecto es la evidencia técnica para el programa de **Análisis y Desarro
 - **Control de Versiones:** Git / GitHub
 
 ## 📂 Estructura del Proyecto
-- `lib/models/`: Definición de la entidad Item y mapeo de datos.
-- `lib/screens/`: Interfaces de usuario y lógica de formularios.
-- `android/`: Configuración nativa y build del APK.
+- lib/models/: Definición de la entidad Item y mapeo de datos.
+- lib/screens/: Interfaces de usuario y lógica de formularios.
+- android/: Configuración nativa y build del APK.
 
 ## 📥 Instalación y Pruebas
-1. Clonar el repositorio: `git clone https://github.com/JulioS0810/mi_app_flutter.git`
-2. Instalar dependencias: `flutter pub get`
-3. Ejecutar en simulador: `flutter run`
+1. Clonar el repositorio: git clone https://github.com/JulioS0810/mi_app_flutter.git
+2. Instalar dependencias: flutter pub get
+3. Ejecutar en simulador: flutter run
 
 ---
 **Aprendiz:** Julio César Suárez Garavito  
